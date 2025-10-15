@@ -82,7 +82,7 @@ Route::middleware(['auth:sanctum', 'admin'])->prefix('admin')->group(function ()
     Route::get('/users', [AdminController::class, 'users']);
     Route::patch('/users/{user}/status', [AdminController::class, 'toggleUserStatus']);
     Route::patch('/users/{user}', [AdminController::class, 'updateUser']);
-    Route::delete('/users/{user}', [AdminController::class, 'deleteUser']);
+    Route::delete('/users/{usler}', [AdminController::class, 'deleteUser']);
     Route::get('/posts', [AdminController::class, 'posts']);
     Route::delete('/posts/{post}', [AdminController::class, 'deletePost']);
     Route::get('/reports', [AdminController::class, 'reports']);
