@@ -5,7 +5,6 @@ set -o pipefail
 
 echo "Starting YOWL Backend Deployment..."
 
-cp .env.production .env
 
 composer install --no-dev --optimize-autoloader --working-dir=/var/www/html
 
