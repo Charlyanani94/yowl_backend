@@ -3,7 +3,7 @@
 echo "Starting YOWL Backend Deployment..."
 
 echo "Setting up environment..."
-cp .env.production .env
+#cp .env.production .env
 
 # Install dependencies
 echo "Installing production dependencies..."
